@@ -23,13 +23,20 @@ let canvas = Canvas(width: 500, height: 500)
  Use whitespace and comments as appropriate.
  */
 // Replace this comment with your first comment – what is the goal of the code you're about to write?
+
+canvas.fillColor = Color.white
+
 for x in stride(from: 25, through: 475, by: 50){
     
-    canvas.fillColor = Color.white
-    
-    canvas.drawEllipse(centreX: x, centreY: 475, width: 40, height: 40)
+    for y in stride(from: 475, through: 25, by: -50){
+        
+        canvas.drawEllipse(centreX: x, centreY: y, width: 40, height: 40)
+        
+    }
     
 }
+
+
 
 
 /*:

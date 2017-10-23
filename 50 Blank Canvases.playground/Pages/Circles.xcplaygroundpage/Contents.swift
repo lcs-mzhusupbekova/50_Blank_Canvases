@@ -22,18 +22,35 @@ let canvas = Canvas(width: 500, height: 500)
  
  Use whitespace and comments as appropriate.
  */
-// Replace this comment with your first comment – what is the goal of the code you're about to write?
-
-canvas.fillColor = Color.white
-
+// Horizontal loop
 for x in stride(from: 25, through: 475, by: 50){
     
+    // Vertical loop
     for y in stride(from: 475, through: 25, by: -50){
         
-        canvas.drawEllipse(centreX: x, centreY: y, width: 40, height: 40)
+        // Large white circle
+        canvas.fillColor = Color.white
+        canvas.drawEllipse (centreX: x, centreY: y, width: 40, height: 40)
         
+        // Entropy (random value)
+        let value = random(from: 1, toButNotIncluding: 5)
+        
+        // Decide what direction to offset based on random value
+        canvas.fillColor = Color.black
+        if value == 1 {
+            canvas.drawEllipse (centreX: x, centreY: y-15, width: 30, height: 30)
+        }
+        else if value == 2 {
+            canvas.drawEllipse (centreX: x, centreY: y+15, width: 30, height: 30)
+        }
+        else if value == 3 {
+            canvas.drawEllipse (centreX: x-15, centreY: y, width: 30, height: 30)
+        }
+        
+        else {
+            canvas.drawEllipse (centreX: x+15, centreY: y, width: 30, height: 30)
+        }
     }
-    
 }
 
 

@@ -13,8 +13,38 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 400, height: 300)
+let canvas = Canvas(width: 200, height: 100)
 
+
+
+
+
+for x in stride(from: 1, through: 200, by: 1) {
+// generate a height
+var y = random(from: 1, toButNotIncluding: 101)
+// draw line
+    canvas.drawLine(fromX: x, fromY: 0, toX: x, toY: y)
+}
+// Generate Perlin noise ( it's  random number that's guaranteed to be different that the last random number but... close to the previous number)
+let p = PerlinGenerator ()
+// gives us a generator to usebe
+//
+var position = 0.0
+let incriment = 0.9
+for x in stride(from: 0, through: 200, by: 1) {
+    //Move through Perlinspace
+    position += incriment
+    //Get a random number value from Perlin Space
+//     they always range between -1 and 1
+//     returns a double ( a decimal)
+    let value = p.perlinNoise(x: position)
+// convert the result into a value between 1 and 100
+    let i = map (value: -1, fromLower: 1, fromUpper: 0, toLower: 0, toUpper: 100)
+//    change the kine color
+    canvas.lineColor = Color(hue: Int(i)+260, saturation: 80, brightness: 90, alpha: 100)
+//     draw a line using this value
+    canvas.drawLine(fromX: x, fromY: 0, toX: x, toY: Int (i))
+}
 /*:
  ## Add your code below
  

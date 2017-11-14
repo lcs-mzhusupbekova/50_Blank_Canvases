@@ -18,6 +18,7 @@ let canvas = Canvas(width: 400, height: 300)
 /*:
  ## Add your code below
  
+ 
  Be sure to write human-readable code.
  
  Use whitespace and comments as appropriate.
@@ -44,5 +45,40 @@ let canvas = Canvas(width: 400, height: 300)
  
  ![timeline](timeline.png "Timeline")
  */
+// to see the origin
+canvas.drawAxes()
+
+// thick our line
+canvas.defaultLineWidth = 5
+
+//draw horizntal line
+canvas.drawLine(fromX: 0, fromY: 0, toX: +150, toY:0)
+
+//move the origin to the end of the line
+canvas.translate(byX: 150, byY: 0)
+
+
+//rotate the origin
+canvas.rotate(by: 120)
+
+// to see the origin
+canvas.drawAxes()
+
+//draw second line
+canvas.drawLine(fromX: 0, fromY: 0, toX: +150, toY:0)
+
+// translate again
+canvas.translate(byX: 150, byY: 0)
+
+//rotate again
+canvas.rotate(by: 120)
+
+// to see the origin
+canvas.drawAxes()
+
+//draw third line
+canvas.drawLine(fromX: 0, fromY: 0, toX: +150, toY:0)
+
+
 // Don't remove the code below
 PlaygroundPage.current.liveView = canvas.imageView

@@ -28,7 +28,6 @@ let y = random(from: 1, toButNotIncluding: 101)
 // Generate Perlin noise ( it's  random number that's guaranteed to be different that the last random number but... close to the previous number)
 let p = PerlinGenerator ()
 // gives us a generator to usebe
-//
 var position = 0.0
 let incriment = 0.9
 for x in stride(from: 0, through: 200, by: 1) {

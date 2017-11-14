@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='macos' display-mode='rendered' executeOnSourceChanges='false'>
+<playground version='6.0' target-platform='macos' display-mode='raw' executeOnSourceChanges='false'>
     <pages>
         <page name='Canvas 1'/>
         <page name='Circles'/>
-        <page name='Canvas 3'/>
-        <page name='Canvas 4'/>
+        <page name='triangle'/>
         <page name='Canvas 5'/>
         <page name='Canvas 6'/>
         <page name='Canvas 7'/>
@@ -51,5 +50,6 @@
         <page name='Canvas 48'/>
         <page name='Canvas 49'/>
         <page name='Canvas 50'/>
+        <page name='Graph (in green color) '/>
     </pages>
 </playground>

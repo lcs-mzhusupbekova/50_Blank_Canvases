@@ -21,7 +21,7 @@ let canvas = Canvas(width: 200, height: 100)
 
 for x in stride(from: 1, through: 200, by: 1) {
 // generate a height
-var y = random(from: 1, toButNotIncluding: 101)
+let y = random(from: 1, toButNotIncluding: 101)
 // draw line
     canvas.drawLine(fromX: x, fromY: 0, toX: x, toY: y)
 }
@@ -37,7 +37,7 @@ for x in stride(from: 0, through: 200, by: 1) {
     //Get a random number value from Perlin Space
 //     they always range between -1 and 1
 //     returns a double ( a decimal)
-    let value = p.perlinNoise(x: position)
+    _ = p.perlinNoise(x: position)
 // convert the result into a value between 1 and 100
     let i = map (value: -1, fromLower: 1, fromUpper: 0, toLower: 0, toUpper: 100)
 //    change the kine color

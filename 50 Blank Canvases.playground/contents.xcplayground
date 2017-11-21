@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='macos' display-mode='rendered' executeOnSourceChanges='false'>
     <pages>
-        <page name='Canvas 1'/>
+        <page name='polygon func'/>
         <page name='Circles'/>
         <page name='triangle'/>
         <page name='challenge with triangle'/>
-        <page name='Canvas 6'/>
-        <page name='Canvas 7'/>
+        <page name='polygon'/>
         <page name='Canvas 8'/>
         <page name='Canvas 9'/>
         <page name='Canvas 10'/>
@@ -51,5 +50,6 @@
         <page name='Canvas 49'/>
         <page name='Canvas 50'/>
         <page name='Graph (in green color) '/>
+        <page name='random circles'/>
     </pages>
 </playground>

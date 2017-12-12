@@ -14,6 +14,15 @@ import PlaygroundSupport
 
 // Create canvas
 let canvas = Canvas(width: 400, height: 300)
+let mathExam = 95
+let historyExam = 90
+
+if mathExam == 95 && historyExam == 90 {
+    print ("Excellent")
+}
+else { print ("Grove time")
+    
+}
 
 /*:
  ## Add your code below
